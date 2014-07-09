@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/backgroundyellow"
+    tools:context=".VedioPlayerActivity" >
+
+	<ImageButton 
+	    android:id="@+id/vpVolumeUpButton"
+		android:src="@drawable/vpvolumeup"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="72dp"
+	    android:layout_height="72dp"
+	    android:scaleType="fitCenter"
+	    android:layout_margin="25dp"
+	    android:layout_centerHorizontal="true" />	
+	<ImageButton 
+	    android:id="@+id/vpVolumeDownButton"
+		android:src="@drawable/vpvolumedown"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="72dp"
+	    android:layout_height="72dp"
+	    android:scaleType="fitCenter"
+	    android:layout_toLeftOf="@id/vpVolumeUpButton"
+	    android:layout_alignTop="@id/vpVolumeUpButton" />	
+	<ImageButton 
+	    android:id="@+id/vpMuteButton"
+		android:src="@drawable/vpmute"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="72dp"
+	    android:layout_height="72dp"
+	    android:scaleType="fitCenter"
+	    android:layout_toRightOf="@id/vpVolumeUpButton"
+	    android:layout_alignTop="@id/vpVolumeUpButton" />
+	
+	<ImageButton 
+	    android:id="@+id/vpPlayButton"
+		android:src="@drawable/vpplay"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="72dp"
+	    android:layout_height="72dp"
+	    android:scaleType="fitCenter"
+	    android:layout_margin="25dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/vpVolumeUpButton" />
+	<ImageButton 
+	    android:id="@+id/vpFastRewindButton"
+		android:src="@drawable/vpfastrewind"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="72dp"
+	    android:layout_height="72dp"
+	    android:scaleType="fitCenter"
+	    android:layout_toLeftOf="@id/vpPlayButton"
+	    android:layout_alignTop="@id/vpPlayButton" />
+	<ImageButton 
+	    android:id="@+id/vpFastForwardButton"
+		android:src="@drawable/vpfastforward"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="72dp"
+	    android:layout_height="72dp"
+	    android:scaleType="fitCenter"
+	    android:layout_toRightOf="@id/vpPlayButton"
+	    android:layout_alignTop="@id/vpPlayButton" />
+	
+	<ImageButton 
+	    android:id="@+id/vpQuitButton"
+		android:src="@drawable/vpquit"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="72dp"
+	    android:layout_height="72dp"
+	    android:scaleType="fitCenter"
+	    android:layout_margin="25dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/vpPlayButton" />
+	<ImageButton 
+	    android:id="@+id/vpPlayLastButton"
+		android:src="@drawable/vpplaylast"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="72dp"
+	    android:layout_height="72dp"
+	    android:scaleType="fitCenter"
+	    android:layout_toLeftOf="@id/vpQuitButton"
+	    android:layout_alignTop="@id/vpQuitButton" />
+	<ImageButton 
+	    android:id="@+id/vpPlayNextButton"
+		android:src="@drawable/vpplaynext"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="72dp"
+	    android:layout_height="72dp"
+	    android:scaleType="fitCenter"
+	    android:layout_toRightOf="@id/vpQuitButton"
+	    android:layout_alignTop="@id/vpQuitButton" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/connectScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/backgroundgrew"
+    tools:context=".ConnectActivity" >
+
+	<ImageView 
+	    android:id="@+id/connectImage"
+	    android:src="@drawable/noconnect"
+	    android:layout_width="128dp"
+	    android:layout_height="128dp"
+	    android:scaleType="fitCenter"
+	    android:layout_marginBottom="40dp"
+	    android:layout_centerHorizontal="true"/>
+
+	<TextView 
+	    android:id="@+id/ipTextView"
+	    android:text="IP Address:"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:gravity="center"
+	    android:textSize="20sp"
+	    android:layout_below="@id/connectImage"/>
+	
+	<ImageButton 
+	    android:id="@+id/confirmIpButton"
+		android:src="@drawable/confirmip"
+		android:background="@color/backgroundgrew"
+	    android:layout_width="32dp"
+	    android:layout_height="32dp"
+	    android:scaleType="fitCenter"
+	    android:layout_marginTop="7dp"
+	    android:layout_below="@id/connectImage"
+	    android:layout_alignParentRight="true" />
+	
+	<EditText 
+        android:id="@+id/ipEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Type IP"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_below="@id/connectImage"
+        android:layout_toRightOf="@id/ipTextView"
+        android:layout_toLeftOf="@id/confirmIpButton" >
+        <requestFocus />
+        </EditText>
+        
+	<ImageButton 
+	    android:id="@+id/getAvailableIPsButton"
+	    android:src="@drawable/getavailableips"
+	    android:background="@color/backgroundgrew"
+	    android:layout_width="64dp"
+	    android:layout_height="64dp"
+	    android:scaleType="fitCenter"
+	    android:layout_below="@id/ipEditText"
+	    />
+	
+	<ImageButton 
+	    android:id="@+id/startButton"
+		android:src="@drawable/startmenu"
+		android:background="@color/backgroundgrew"
+	    android:layout_width="128dp"
+	    android:layout_height="128dp"
+	    android:scaleType="fitCenter"
+	    android:layout_below="@id/ipEditText"
+	    android:layout_marginTop="40dp"
+		android:visibility="gone"
+	    android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

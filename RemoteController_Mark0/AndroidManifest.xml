@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.seanxie.remotecontroller_mark0"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="3" />
+    
+    <uses-permission
+        android:required="true"
+        android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission
+        android:required="true"
+        android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission
+        android:required="true"
+        android:name="android.permission.INTERNET"/>
+    <uses-permission
+        android:required="true"
+        android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.seanxie.remotecontroller_mark0.ConnectActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.seanxie.remotecontroller_mark0.KeyBindingActivity"
+            android:label="KeyBinding"
+            android:parentActivityName="com.seanxie.remotecontroller_mark0.ConnectActivity" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.seanxie.remotecontroller_mark0.ConnectActivity" />            
+        </activity>
+        
+        <activity
+            android:name="com.seanxie.remotecontroller_mark0.MouseActivity"
+            android:label="Mouse"
+            android:parentActivityName="com.seanxie.remotecontroller_mark0.KeyBindingActivity" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.seanxie.remotecontroller_mark0.KeyBindingActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.seanxie.remotecontroller_mark0.PPTControllerActivity"
+            android:label="PPTController"
+            android:parentActivityName="com.seanxie.remotecontroller_mark0.KeyBindingActivity" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.seanxie.remotecontroller_mark0.KeyBindingActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.seanxie.remotecontroller_mark0.VedioPlayerActivity"
+            android:label="Vedio Player"
+            android:parentActivityName="com.seanxie.remotecontroller_mark0.KeyBindingActivity" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.seanxie.remotecontroller_mark0.KeyBindingActivity" />
+        </activity>
+        
+        <service android:name="com.seanxie.remotecontroller_mark0.SendMessageService"></service>
+        
+    </application>
+
+</manifest>

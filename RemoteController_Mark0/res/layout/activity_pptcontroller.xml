@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/backgroundyellow"
+    tools:context=".PPTControllerActivity" >
+
+	<ImageButton 
+	    android:id="@+id/pptQuitButton"
+		android:src="@drawable/pptquit"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="128dp"
+	    android:layout_height="128dp"
+	    android:scaleType="fitCenter"
+	    android:layout_centerHorizontal="true" />
+	
+	<ImageButton 
+	    android:id="@+id/pptLastSlideButton"
+		android:src="@drawable/pptlastslide"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="128dp"
+	    android:layout_height="128dp"
+	    android:scaleType="fitCenter"
+	    android:layout_below="@id/pptQuitButton"
+	    android:layout_alignParentLeft="true" />
+	
+	<ImageButton 
+	    android:id="@+id/pptNextSlideButton"
+		android:src="@drawable/pptnextslide"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="128dp"
+	    android:layout_height="128dp"
+	    android:scaleType="fitCenter"
+	    android:layout_below="@id/pptQuitButton"
+	    android:layout_alignParentRight="true" />
+	
+	<ImageButton 
+	    android:id="@+id/pptPlayButton"
+		android:src="@drawable/pptplay"
+		android:background="@color/backgroundyellow"
+	    android:layout_width="128dp"
+	    android:layout_height="128dp"
+	    android:scaleType="fitCenter"
+	    android:layout_below="@id/pptLastSlideButton"
+	    android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

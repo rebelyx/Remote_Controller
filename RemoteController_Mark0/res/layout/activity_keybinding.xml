@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundyellow"
+    tools:context=".KeybindingActivity" >
+    
+    <ImageButton 
+	    android:id="@+id/mouseAndKeyboardButton"
+		android:src="@drawable/mouseandkeyboard"
+		android:background="#FFDC35"
+	    android:layout_width="128dp"
+	    android:layout_height="128dp"
+	    android:scaleType="fitCenter"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"/>
+    
+	<GridView
+	    android:id="@+id/GridViewId"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:numColumns="auto_fit"
+	    android:verticalSpacing="10dip"
+	    android:horizontalSpacing="10dip"
+	    android:paddingRight="5dip"
+	    android:columnWidth="90dip"
+	    android:stretchMode="columnWidth"
+	    android:gravity="center"
+	    android:background="@color/backgroundyellow"
+	    android:layout_above="@id/mouseAndKeyboardButton"
+	    android:layout_alignParentTop="true"
+	    android:layoutAnimation="@anim/grid_anim_layout" />
+	
+	
+</RelativeLayout>
